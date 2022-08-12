@@ -1,7 +1,14 @@
 import React from "react";
 
+import { ChakraProvider } from "@chakra-ui/react";
+import { PageRoutes } from "./routes";
+
 function App() {
-  return <div className="App">geting started</div>;
+  return (
+    <ChakraProvider>
+      <PageRoutes />
+    </ChakraProvider>
+  );
 }
 
 export default App;
